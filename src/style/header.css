@@ -1,0 +1,239 @@
+:root {
+  --hero_pink: rgba(220, 86, 197, 1);
+  --form-input: rgba(255, 255, 255, 0.2);
+  --invisible: rgba(0, 0, 0, 0);
+  --form-input-text: rgba(147, 147, 147, 1);
+}
+
+body {
+  margin: 0px;
+}
+
+/* ---- Hero Banner ---- */
+
+.header {
+  width: 100%;
+  height: 446px;
+  background-image:
+    linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.5)),
+    url(../images/header/hero\ banner.jpg);   
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header::before {
+  position: absolute;
+  content: '';
+  height: 102px;
+  top: 344px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image:
+    linear-gradient(rgba(13, 13, 13, 0.19), rgba(14, 14, 14, 0.8));
+  pointer-events: none;
+}
+
+/* ---- Header Logo ---- */
+.header-logo-background {
+  width: 229px;
+  height: 193px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.svg-logo_container {
+  position: absolute;
+  margin: 0 auto;
+  top: 40.21px;
+  left: 16px;
+  z-index: 2;
+}
+
+.svg-logo {
+  width: 136.2px;
+  height: 69.9px;
+}
+
+/* ---- Hero Title ---- */
+
+.header-title {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60.95px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--hero_pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px 0px 0px;
+}
+
+/* ---- Search and Filter Form ---- */
+
+.header-form {
+  padding: 48px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.form-search-container, 
+.form-filter-container {
+  color: var(--form-input-text);
+  width: 288px;
+  height: 40px;
+  background-color: var(--form-input);
+  border: 0px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header-search, 
+.header-filter {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--form-input-text);
+  width: 244px;
+  height: 20px;
+  background-color: var(--invisible);
+  border: 0px;
+  outline: none;
+  padding: 0px 0px 0px 32px;
+  box-sizing: border-box;
+}
+
+.header-search::placeholder, 
+.header-filter::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--form-input-text);
+}
+
+.svg-search {
+  width: 12px;
+  height: 12px;
+}
+
+.svg-filter {
+  width: 15px;
+  height: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    height: 364px;
+  }
+
+  .header::before {
+    height: 102px;
+    top: 262px;
+  }
+
+  .header-logo-background {
+      width: 179.5px;
+      height: 151px;
+    }
+
+  .svg-logo_container {
+    top: 23.15px;
+  }
+  .svg-logo {
+    width: 100px;
+    height: 51.32px;
+  }
+  
+  .header-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .header-form {
+    flex-direction: row;
+  }
+  .form-search-container,
+  .form-filter-container {
+    width: 270px;
+  }
+  .header-search,
+  .header-filter {
+    width: 226px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    height: 364px;
+  }
+
+  .header::before {
+    height: 102px;
+    top: 262px;
+  }
+  
+  .header-logo-background {
+      width: 106.5px;
+      height: 90px;
+    }
+  
+  .svg-logo_container {
+    top: 19.97px;
+  }
+
+  .svg-logo {
+    width: 59.33px;
+    height: 24.64px;
+  }
+
+  .header-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .header-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-search-container,
+  .form-filter-container {
+    width: 280px;
+  }
+  
+  .header-search,
+  .header-filter {
+    width: 236px;
+  }
+}
+
+
+
+
+
+
+
+
