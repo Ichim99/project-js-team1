@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --hero_pink: rgba(220, 86, 197, 1);
   --form-input: rgba(255, 255, 255, 0.2);
   --invisible: rgba(0, 0, 0, 0);
   --form-input-text: rgba(147, 147, 147, 1);
 }
+
+
 
 body {
   margin: 0px;
@@ -64,7 +68,7 @@ body {
 /* ---- Hero Title ---- */
 
 .header-title {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 50px;
   font-weight: 900;
   line-height: 60.95px;
@@ -106,7 +110,7 @@ body {
 
 .header-search, 
 .header-filter {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -124,7 +128,7 @@ body {
 
 .header-search::placeholder, 
 .header-filter::placeholder {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
