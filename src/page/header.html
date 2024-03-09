@@ -31,7 +31,7 @@
       </div>
       <div class="header-form">
         <div class="form-search-container">
-          <input type="text" autocomplete="off" name="header-search" id="header-search" class="header-search" placeholder="Start searching">
+          <input type="text" autocomplete="off" name="header-search" id="header-search" class="header-search" placeholder="Start searching" data-search>
           <svg class="svg-search">
             <use href="./images/header/sprite.svg#icon-search"></use>
           </svg>
@@ -45,7 +45,12 @@
       </div>
     </div>
   </header>
-  <script src="./javascript/header.js"></script>
+  <main>
+    <div id="events-container"></div>
+    <div id="pagination-container"></div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./script/header.js"></script>
 </body>
 </html>
 
