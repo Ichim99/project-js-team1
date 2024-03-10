@@ -1,0 +1,10 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-pin-location" viewBox="0 0 21 32">
+            <path fill="#fff" style="fill: var(--color1, #fff)"
+                d="M10.667-0c-5.882 0-10.667 4.99-10.667 11.123 0 7.709 10.677 20.877 10.677 20.877s10.656-13.547 10.656-20.877c0-6.133-4.785-11.123-10.667-11.123zM13.885 14.38c-0.887 0.925-2.053 1.388-3.218 1.388s-2.331-0.463-3.218-1.388c-1.775-1.85-1.775-4.861 0-6.712 0.859-0.896 2.002-1.39 3.218-1.39s2.359 0.494 3.218 1.39c1.775 1.851 1.775 4.862 0 6.712z">
+            </path>
+        </symbol>
+    </defs>
+</svg>
