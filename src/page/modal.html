@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style/modal.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container magictime puffIn"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <div class="modal__header">
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </div>
+
+          <div class="modal__top_image"></div>
+
+          <div class="modal__content" id="modal-1-content">
+            <div class="event__image"></div>
+            <div class="event__details">
+              <h2 class="event__info_tilte">INFO</h2>
+              <div class="event__info"></div>
+
+              <h2>WHEN</h2>
+              <div class="event__start_date"></div>
+
+              <h2>WHERE</h2>
+              <div class="event__place"></div>
+
+              <h2>WHO</h2>
+              <div class="event__who"></div>
+
+              <h2>PRICES</h2>
+              <div class="event__prices"></div>
+            </div>
+          </div>
+
+          <div class="modal__footer">
+            <button class="event__btn2">MORE FROM THIS AUTHOR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/script/modal.js"></script>
+  </body>
+</html>
