@@ -12,7 +12,7 @@ ul {
   text-decoration: none;
 }
 
-.main {
+main {
   padding: 20px;
   height: auto;
   background-image: url('../images/main/background-image-main.png');
@@ -21,93 +21,77 @@ ul {
 
 /* Cards */
 
-.cards-event {
+.row {
   display: grid;
   grid-template-columns: repeat(2, 135px);
   gap: 32px 20px;
   justify-content: center;
 }
 
-.card-container {
+.event {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 35% 5px;
   gap: 8px;
   width: 135px;
-  height: 208px;
   padding: 10px 0px;
+  height: fit-content;
 }
 
-.card-container:hover {
+.event:hover {
   transform: scale(1.2);
   box-shadow: 0 0 20px #f80bfd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-card {
-  width: 125px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50px 2px;
+  margin-top: 10px;
+  margin-right: 10px;
   object-fit: cover;
-  border-radius: 50px 0px;
-}
-
-.info-events-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .title-event {
+  width: 130px;
   font-family: var(--font-cards);
   font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
   letter-spacing: 0em;
   color: var(--color-title-cards);
   text-align: center;
+  margin: 0px;
 }
 
 .data-event {
   font-family: var(--font-cards);
   font-size: 14px;
-  font-weight: 400;
 
   color: rgba(255, 255, 255, 1);
   text-align: center;
+  width: 130px;
+  margin: 0;
 }
 
-.location-event a .svg-pin-location {
-  width: 6px;
-  height: 9px;
-}
-
-.location-event a {
-  display: flex;
-  flex-direction: row;
-  gap: 3px;
+.location-event {
   font-family: var(--font-cards);
-  font-weight: 600;
-  font-size: 12px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 1);
   text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 12px;
 }
 
 /* Pagination */
 
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 47px;
-}
-.list-pages {
+#pagination-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 60px 47px;
+  margin: 60px 0;
 }
 
 .page-number {
@@ -118,6 +102,9 @@ ul {
   width: 30px;
   height: 30px;
   color: #fff;
+  background-color: var(--background-color-main);
+  border: 0px;
+  border-radius: 50%;
   margin: 0 10px;
   font-family: Montserrat;
   font-size: 14px;
@@ -125,14 +112,13 @@ ul {
   line-height: 17px;
   letter-spacing: 0em;
   text-align: center;
+  transition: background-color 0.3s;
 }
 .page-number:hover {
   cursor: pointer;
   border-radius: 50%;
   background: #f80bfd;
 }
-
-/* id active for current page */
 
 #active {
   border-radius: 50%;
@@ -146,23 +132,22 @@ ul {
     padding: 32px;
   }
 
-  .cards-event {
+  .row {
     display: grid;
     grid-template-columns: repeat(4, 152px);
     gap: 40px 32px;
     justify-content: center;
   }
 
-  .card-container {
+  .event {
     gap: 8px;
     width: 152px;
-    height: 223px;
     padding: 10px 0px;
   }
   .img-card {
-    width: 152px;
-    height: 211px;
-    border-radius: 42% 5px;
+    width: 141px;
+    height: 120px;
+    border-radius: 50% 5px;
   }
 
   .title-event {
@@ -175,11 +160,6 @@ ul {
     font-size: 16px;
     font-weight: 400;
   }
-
-  .location-event a {
-    font-weight: 600;
-    font-size: 14px;
-  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -187,23 +167,22 @@ ul {
     padding: 0px 16px 60px 16px;
   }
 
-  .cards-event {
+  .row {
     display: grid;
     grid-template-columns: repeat(4, 288px);
     gap: 40px 32px;
     justify-content: center;
   }
 
-  .card-container {
+  .event {
     gap: 8px;
     width: 288px;
-    height: 320px;
     padding: 10px 0px;
   }
 
   .img-card {
     width: 267px;
-    height: 220px;
+    height: 226px;
     border-radius: 70px 0px;
     border-radius: 39% 5px;
   }
@@ -217,10 +196,5 @@ ul {
   .data-event {
     font-size: 16px;
     font-weight: 400;
-  }
-
-  .location-event a {
-    font-weight: 600;
-    font-size: 14px;
   }
 }
