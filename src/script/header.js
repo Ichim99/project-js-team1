@@ -22,12 +22,12 @@ function displayEvents(events) {
     let eventCount = 0;
     let row;
     events.forEach(function(event) {
-        if (eventCount % 4 === 0) {
+        if (eventCount % 20 === 0) {
             row = $('<div class="row"></div>');
             eventsContainer.append(row);
         }
         let eventDiv = $('<div class="event"></div>');
-        let eventImage = $('<img>');
+        let eventImage = $('<img class="img-card">');
         if (event.images && event.images.length > 0) {
             eventImage.attr('src', event.images[0].url);
             eventImage.attr('alt', event.name);
@@ -42,10 +42,10 @@ function displayEvents(events) {
         }
         eventDiv.append(eventImage);
 
-        eventDiv.append('<h2>' + event.name + '</h2>');
-        eventDiv.append('<p>' + event.dates.start.localDate + '</p>');
+        eventDiv.append('<h2 class="title-event"> ' + event.name + '</h2 > ');
+        eventDiv.append('<p class="data-event">' + event.dates.start.localDate + '</p>');
         if (event._embedded && event._embedded.venues && event._embedded.venues.length > 0) {
-            eventDiv.append('<p>' + event._embedded.venues[0].name + '</p>');
+            eventDiv.append('<p class="location-event" >' + event._embedded.venues[0].name + '</p>');
         } else {
             eventDiv.append('<p>Venue information not available</p>');
         }
@@ -60,13 +60,16 @@ function displayPagination(totalPages) {
     paginationContainer.empty();
     let numPagesToDisplay = Math.min(totalPages, 13); // Limit to 13 pages
     for (let i = 1; i <= numPagesToDisplay; i++) {
-        let pageButton = $('<button>' + i + '</button>');
+        let pageButton = $('<button class="page-number">' + i + '</button>');
         pageButton.click(function() {
             currentPage = i; // Update currentPage when a pagination button is clicked
             fetchDataAndDisplayEvents();
         }.bind(null, i)); // Pass page number as parameter
         paginationContainer.append(pageButton);
+
+       
     }
+    
 }
 
     // Function to fetch events from API
