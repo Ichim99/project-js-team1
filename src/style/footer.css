@@ -1,0 +1,45 @@
+:root {
+    --background-color-main: rgba(14, 14, 14, 1);
+    --font-cards: 'Montserrat', sans-serif;
+    --color-title-cards: rgba(220, 86, 197, 1);
+  }
+  
+  .footer {
+    background-color: var(--background-color-main);
+  }
+  
+  .footer > .container {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    color: var(--color-title-cards);
+    font-family: var(--font-cards);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .footer > .container {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+  
+  .footer-text {
+    position: relative;
+    z-index: 100;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .footer-text {
+      width: 252px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+ 

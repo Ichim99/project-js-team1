@@ -305,7 +305,7 @@
   position: relative;
 }
 .event__single_price::before {
-  content: url(../images/code-ticket.svg);
+  content: url(../images/main/main.svg);
   width: 28px;
   height: 100%;
   position: absolute;
