@@ -51,9 +51,10 @@ function displayEvents(events) {
         }
         row.append(eventDiv);
         eventCount++;
-    });
+        // Add event ID as a data attribute to the eventDiv
+        eventDiv.attr('data-event-id', event.id);
+    }); 
 }
-
 // Function to display pagination
 function displayPagination(totalPages) {
     let paginationContainer = $('#pagination-container');
