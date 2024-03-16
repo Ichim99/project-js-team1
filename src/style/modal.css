@@ -130,7 +130,7 @@
   transform: scale(1.05);
 }
 .modal__btn-primary {
-  background-color: #dc56c5;
+  background-color: rgb(2, 139, 9);
   color: #fff;
 }
 
@@ -205,7 +205,7 @@
   font-weight: 400;
 }
 .modal__content h2 {
-  color: #dc56c5;
+  color: rgb(2, 139, 9);
   font-weight: 600;
   font-size: 20px;
 }

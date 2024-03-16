@@ -3,7 +3,7 @@
 :root {
   --background-color-main: rgba(14, 14, 14, 1);
   --font-cards: 'Montserrat', sans-serif;
-  --color-title-cards: rgba(220, 86, 197, 1);
+  --color-title-cards: rgb(2, 139, 9);
 }
 ul {
   padding: 0;
@@ -41,7 +41,7 @@ main {
 
 .event:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 20px #f80bfd;
+  box-shadow: 0 0 20px rgb(2, 139, 9);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -117,12 +117,12 @@ main {
 .page-number:hover {
   cursor: pointer;
   border-radius: 50%;
-  background: #f80bfd;
+  background: rgb(2, 139, 9);
 }
 
 #active {
   border-radius: 50%;
-  background: #f80bfd;
+  background: rgb(2, 139, 9);
 }
 
 /* Tablet */
